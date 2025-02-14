@@ -26,12 +26,15 @@ and 50 seconds.
 
 As to the answer of the first question, one reason is that the hardware/compiler might not operate as expected with a larger
 tree size. The way the tree was implemented (recursive calls, memory, etc.) could also affect how the program handled a much 
-larger tree, therefore taking longer to search through. Another possible reason is that the first test with 1,000 elements
-was an inaccurate or outlying piece of data, and therefore threw off calculations for timing of a larger tree. 
+larger tree, therefore taking longer to search through. Another possible reason is that the required pointer storage 
+would become significantly larger for a tree size of 10,000, making the search even more inefficient. 
 
 Add your answers to this markdown file.
 
 ### Sources and Plagiarism 
-Sources: https://cs.stackexchange.com/questions/84618/time-complexity-of-searching-an-element-in-binary-search-tree
+Sources: 
+https://cs.stackexchange.com/questions/84618/time-complexity-of-searching-an-element-in-binary-search-tree
+
+https://www.geeksforgeeks.org/applications-advantages-and-disadvantages-of-binary-search-tree/
 
 I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
