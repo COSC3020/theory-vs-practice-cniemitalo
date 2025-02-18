@@ -24,10 +24,12 @@ and 50 seconds.
   reasons why this could be the case, given that reasoning with the asymptotic
   complexity suggests a different time.
 
-As to the answer of the first question, one reason is that the hardware/compiler might not operate as expected with a larger
-tree size. The way the tree was implemented (recursive calls, memory, etc.) could also affect how the program handled a much 
-larger tree, therefore taking longer to search through. Another possible reason is that the required pointer storage 
-would become significantly larger for a tree size of 10,000, making the search even more inefficient. 
+//hardware/compiler
+One way the code could be affected is branch prediction failures. The CPU uses branch prediction in an attempt to optimize the code, but as the tree size gets larger, the more likely it is to have irregular/unpredictable branches, therefore slowing down the CPU as it must discard previous instructions before beginning again. 
+
+The way the tree was implemented (recursive calls, memory, etc.) could also affect how the program handled a much larger tree, therefore taking longer to search through. 
+
+Another possible reason is that the tree was not properly balanced, which would become a much larger problem with the significantly larger tree size. The tree becomes more unorganized the deeper it goes, and in the worst cases essentially turns into a linked list, negating the optimal time complexity. 
 
 Add your answers to this markdown file.
 
